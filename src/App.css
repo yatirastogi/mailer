@@ -1,0 +1,10 @@
+.hide_create,.hide_login,.hide_send{
+  display: none;
+
+}
+.show_create,.show_send{
+  display:block;
+}
+.show_login{
+  display:block;
+}
