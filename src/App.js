@@ -91,7 +91,7 @@ class App extends React.Component {
   }
   showCreate(e) {
     this.hide_l(e);
-    if (this.state.create == "hide_create") {
+    if (this.state.create === "hide_create") {
       e.target.className = "nav-link active";
       this.setState({ create: "show_create",send:"hide_send", email: "", password: "" });
       console.log("create visible");
@@ -105,7 +105,7 @@ class App extends React.Component {
   }
 
   showSend(e) {
-    if (this.state.send == "hide_send") {
+    if (this.state.send === "hide_send") {
       e.target.className = "nav-link active";
       this.setState({ send: "show_send",create:"hide_create",login:"hide_login", email: "", password: "" });
       console.log("send visible");
@@ -123,7 +123,7 @@ class App extends React.Component {
   showLogin(e) {
     this.hide(e);
 
-    if (this.state.login == "hide_login") {
+    if (this.state.login === "hide_login") {
       e.target.className = "nav-link active";
       this.setState({
         login: "show_login",
@@ -165,7 +165,7 @@ class App extends React.Component {
     const len = event.target.parentElement.children[1].children.length;
     let k = 0;
     for (i = 0; i < (len-1); i++) {
-       if (event.target.parentElement.children[1].children[i].children[1].value != "") {
+       if (event.target.parentElement.children[1].children[i].children[1].value !== "") {
           s[i] = event.target.parentElement.children[1].children[i].children[1].value;
           k = k + 1;
       } else continue;
