@@ -206,22 +206,22 @@ class App extends React.Component {
           <li className="nav-item">
             <button onClick={(e) => this.showCreate(e)} className="nav-link">
               Create
-            </a>
+            </button>
           </li>
           <li className="nav-item">
             <button onClick={(e) => this.showLogin(e)} className="nav-link">
               Login
-            </a>
+            </button>
           </li>
           <li className="nav-item">
             <button onClick={(e) => this.showSend(e)} className="nav-link">
               Send Mail
-            </a>
+            </button>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
               {this.state.username}
-            </a>
+            </button>
           </li>
         </ul>
 
