@@ -221,7 +221,7 @@ class App extends React.Component {
           <li className="nav-item">
             <a className="nav-link" href="#">
               {this.state.username}
-            </button>
+            </a>
           </li>
         </ul>
 
