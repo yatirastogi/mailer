@@ -204,17 +204,17 @@ class App extends React.Component {
       <div className="container">
         <ul style={{marginBottom:"10%"}} className="nav nav-pills">
           <li className="nav-item">
-            <a onClick={(e) => this.showCreate(e)} className="nav-link">
+            <button onClick={(e) => this.showCreate(e)} className="nav-link">
               Create
             </a>
           </li>
           <li className="nav-item">
-            <a onClick={(e) => this.showLogin(e)} className="nav-link">
+            <button onClick={(e) => this.showLogin(e)} className="nav-link">
               Login
             </a>
           </li>
           <li className="nav-item">
-            <a onClick={(e) => this.showSend(e)} className="nav-link">
+            <button onClick={(e) => this.showSend(e)} className="nav-link">
               Send Mail
             </a>
           </li>
